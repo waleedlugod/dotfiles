@@ -1,0 +1,192 @@
+% Brian's LaTeX style file 
+% for problem sets
+%
+% last updated: Nov 9, 2017
+%               Feb 14, 2020
+%               Nov 2, 2020
+%               Aug 17, 2022
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Do not touch anything below, unless you know what you're doing...
+\usepackage[utf8]{inputenc}
+\usepackage[a4paper,left=1in,right=1in,top=1.5in,bottom=1in]{geometry}
+\usepackage{hyperref}
+\usepackage{mlmodern}
+\usepackage[mathcal]{euscript}
+\usepackage{zi4}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{amsthm}
+\usepackage{multicol}
+\usepackage{multirow}
+\usepackage{algorithm}
+\usepackage{algcompatible}
+\usepackage[noend]{algpseudocode}
+\usepackage{xlop}
+\usepackage{xcolor}
+\usepackage{float}
+\usepackage{graphicx}
+\usepackage{fancyhdr}
+\usepackage{titlesec}
+\usepackage{booktabs}
+\usepackage{array}
+\usepackage{xifthen}
+\usepackage{ulem}
+\usepackage{wrapfig}
+\usepackage{minted}
+
+\pagestyle{fancy}
+
+\titleformat{\section}{\Large\sffamily\bfseries}{\thesection}{1em}{}
+\titleformat{\subsection}{\large\sffamily}{\thesubsection}{1em}{}
+\titleformat{\subsubsection}{\large\sffamily}{\thesubsection}{1em}{}
+
+% \makeatletter
+% \ifx\pdfmdfivesum\undefined
+%   \let\pdfmdfivesum\mdfivesum
+% \fi
+% \edef\filesum{\pdfmdfivesum file {\jobname}}
+% \makeatother
+
+\newtheorem{prob}{Problem}
+\newtheorem{thm}{Theorem}
+\newtheorem*{thm*}{Theorem}
+\newtheorem{theorem}{Theorem}
+\newtheorem*{theorem*}{Theorem}
+\newtheorem{lemma}{Lemma}
+\newtheorem*{lemma*}{Lemma}
+\newtheorem{claim}{Claim}
+\newtheorem*{claim*}{Claim}
+\newtheorem{post}{Postulate}
+
+% \fancyfoot[L]{\sffamily\tiny Last compiled: \today\ \DTMcurrenttime\\Source hash: \filesum}
+\fancyfoot[C]{\sffamily\selectfont\thepage}
+% \fancyfoot[R]{\sffamily\footnotesize}
+
+\setlength{\parskip}{4pt}
+
+% fixed-with tabular columns
+\newcolumntype{L}[1]{>{\raggedright\let\newline\\\arraybackslash\hspace{0pt}}m{#1}}
+\newcolumntype{C}[1]{>{\centering\let\newline\\\arraybackslash\hspace{0pt}}m{#1}}
+\newcolumntype{R}[1]{>{\raggedleft\let\newline\\\arraybackslash\hspace{0pt}}m{#1}}
+
+% subject
+\newcommand{\subject}{CSCI 30 \mysection}
+
+\newcommand{\problem}[1]{\section*{Problem \psetnumber-#1}}
+
+\lhead{\sffamily \myname\\\subject}
+\rhead{\sffamily ID\# \myidnumber\\Problem Set \psetnumber}
+% \newcommand{\probsetnum}[1]{\rhead{\sffamily ID\# \myidnumber\\Problem Set #1}}
+
+% enumerate styles
+\renewcommand{\labelenumi}{(\alph{enumi})}
+\renewcommand{\labelenumii}{\roman{enumii}.}
+
+% TikZ
+\usepackage{tikz}
+\usetikzlibrary{automata}
+\usetikzlibrary{arrows}
+\usetikzlibrary{positioning}
+\usetikzlibrary{shapes.geometric}
+\usetikzlibrary{shapes.misc}
+
+\tikzset{vertex/.style={circle,fill=bgw,draw,minimum size=0.7cm,inner sep=0pt}}
+\tikzset{uedge/.style = {-}}
+\tikzset{edge/.style = {->, > = triangle 45}}
+\tikzset{bedge/.style = {<->, > = triangle 45}}
+
+\tikzset{long state/.style={draw,rounded rectangle}}
+
+% CS 130 macros
+\newcommand{\List}[1]{\left[#1\right]}
+\newcommand{\Set}[1]{\left\{#1\right\}}
+\newcommand{\Seq}[1]{\left\langle#1\right\rangle}
+\newcommand{\Str}[1]{\texttt{#1}}
+\renewcommand{\varepsilon}{\epsilon}
+\newcommand{\s}[1]{\texttt{#1}}
+\newcommand{\Len}[1]{\left|#1\right|}
+
+%% CSCI 30 macros
+% Pseudocode
+\usepackage{stmaryrd}
+\renewcommand{\algorithmicrequire}{\textbf{Input:}}
+\renewcommand{\algorithmicensure}{\textbf{Output:}}
+% \renewcommand{\algorithmicfunction}{\textbf{algorithm}}
+\newcommand{\Proc}[2]{\item[\textproc{#1}(#2):]}
+\renewcommand{\algorithmicfunction}{}
+\renewcommand{\Return}[1]{\State \textbf{return} #1}
+\algnewcommand\algorithmicforeach{\textbf{for each}}
+\algdef{S}[FOR]{ForEach}[1]{\algorithmicforeach\ #1\ \algorithmicdo}
+% \algrenewcommand{\algorithmiccomment}[1]{\hfill$\sslash$ #1}
+\algrenewcommand{\algorithmiccomment}[1]{\hfill\textbf{\texttt{/\hspace*{-3pt}/}} #1}
+\newcommand{\Break}{\State \textbf{break}}
+\newcommand{\algtrue}{\textsc{true}}
+\newcommand{\algfalse}{\textsc{false}}
+\newcommand{\algnull}{\textsc{null}}
+\newcommand{\Id}[1]{\textit{#1}}
+\MakeRobust{\Call}
+
+% suppress do, then
+\algrenewcommand\algorithmicthen{}
+\algrenewcommand\algorithmicdo{}
+% new operators
+\newcommand{\append}{\mathrel{\hspace{1pt}++\hspace{1pt}}}
+\newcommand{\cons}{\mathrel{\hspace{1pt}:\hspace*{0.8pt}:\hspace{1pt}}}
+\newcommand{\booland}{\mathrel{\hspace{1pt}\text{and}\hspace{1pt}}}
+\newcommand{\Or}{\mathrel{\hspace{1pt}\text{or}\hspace{1pt}}}
+\newcommand{\In}{\ifmmode\ \textrm{\textbf{in}}\ \else\textbf{in}\ \fi}
+% yoinked from clrscode
+\def\gets{\mathrel{\hspace{1pt}=\hspace{1pt}}}
+\newcommand{\isequal}{\mathrel{\scalebox{0.6}[1]{=}\hspace*{0.1pt}\scalebox{0.6}[1]{=}}}
+\newcommand{\To}{\ifmmode\ \textrm{\textbf{to}}\ \else\textbf{to}\ \fi}
+\newcommand{\By}{\ifmmode\ \textrm{\textbf{by}}\ \else\textbf{by}\ \fi}
+\newcommand{\Downto}{\ifmmode\ \textrm{\textbf{downto}}\ \else\textbf{downto}\ \fi}
+
+% line numbers
+\newcommand{\setalglineno}[1]{%
+  \setcounter{ALG@line}{\numexpr#1-1}}
+% array ranges
+% \newcommand{\twodots}{\mathinner{\ldotp\ldotp}}
+\newcommand{\subarr}{\mathinner{:}}
+
+% attributes from OOP
+\newcommand{\attribxi}[2]{\ensuremath{#1.\hspace*{1pt}\Id{#2}}}
+\newcommand{\attribxx}[2]{\ensuremath{#1.\hspace*{1pt}#2}}
+\newcommand{\attribix}[2]{\ensuremath{\Id{#1}\hspace*{1pt}.#2}}
+\newcommand{\attribii}[2]{\ensuremath{\Id{#1}\hspace*{1pt}.\hspace*{1pt}\Id{#2}}}
+\newcommand{\attrib}[2]{\attribxi{#1}{#2}}
+\newcommand{\attribe}[3]{\attribxi{(#1,#2)}{#3}}
+\newcommand{\attribex}[3]{\attribxx{(#1,#2)}{#3}}
+\newcommand{\attribb}[3]{\attribxi{\attribxi{#1}{#2}}{#3}}
+\newcommand{\attribbb}[4]{\attribxi{\attribb{#1}{#2}{#3}}{#4}}
+\newcommand{\attribbbb}[5]{\attribxi{\attribbb{#1}{#2}{#3}{#4}}{#5}}
+\newcommand{\attribbxxi}[3]{\attribxi{\attribxx{#1}{#2}}{#3}}
+
+% Macros for big-O and friends (within math mode)
+\newcommand{\bigO}[1]{O\left(#1 \right)}
+\newcommand{\bigOmega}[1]{\Omega\left(#1 \right)}
+\newcommand{\bigTheta}[1]{\Theta\left(#1 \right)}
+\newcommand{\littleOmega}[1]{\omega\left(#1 \right)}
+\newcommand{\littleO}[1]{o\left(#1 \right)}
+
+
+\newcommand{\NN}{\mathbb{N}}
+\newcommand{\ZZ}{\mathbb{Z}}
+\newcommand{\QQ}{\mathbb{Q}}
+\newcommand{\RR}{\mathbb{R}}
+\newcommand{\FF}{\mathbb{F}}
+\newcommand{\gen}[1]{\left\langle #1 \right\rangle}
+
+\newcommand{\E}[1]{\text{E}\left[#1\right]}
+\newcommand{\Var}[1]{\text{Var}\left[#1\right]}
+
+% Minted style
+\usemintedstyle{bw}
+
+% sus
+\usepackage{tikz-among-us}
+
+% macros for problem 1-2
+\DeclareMathOperator{\eval}{eval}
+\DeclareMathOperator{\subst}{subst}
