@@ -10,9 +10,10 @@ sudo pacman -S --noconfirm \
 	ripgrep fd fzf \
 	cmake nodejs npm python python-pip \
 	jdk-openjdk php composer \
-	btop neofetch ranger \
-	texlive \
+	btop neofetch \
 	vulkan-intel lib32-vulkan-intel steam \
+	python-pillow \
+	texlive \
 
 # install yay
 git clone https://aur.archlinux.org/yay.git
@@ -34,6 +35,7 @@ yay -S --noconfirm \
 	hyprpicker-git \
 	vencord-desktop-git \
 	xwaylandvideobridge-bin \
+	ranger-git \
 
 # install live-server
 sudo npm i -g live-server
