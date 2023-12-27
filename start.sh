@@ -3,7 +3,8 @@
 sudo pacman -S --noconfirm \
 	xf86-video-intel bluez bluez-utils blueman wireplumber \
 	pipewire pipewire-audio pipewire-alsa pipewire-pulse pipewire-jack mpd \
-	hyprland xdg-desktop-portal-hyprland qt5-waylnd qt6-waylnd \
+	hyprland qt5-wayland qt6-wayland \
+	xdg-desktop-portal-gtk xdg-desktop-portal-hyprland \
 	polkit dunst wofi wl-clipboard \
 	lazygit neovim git openssh \
 	ripgrep fd fzf \
