@@ -6,12 +6,13 @@ sudo pacman -S --noconfirm \
 	hyprland qt5-wayland qt6-wayland \
 	xdg-desktop-portal-gtk xdg-desktop-portal-hyprland \
 	polkit dunst wofi wl-clipboard \
-	lazygit neovim git openssh \
+	lazygit neovim git openssh wget \
 	ripgrep fd fzf \
 	cmake nodejs npm python python-pip \
 	jdk-openjdk php composer \
-	btop neofetch \
+	btop neofetch ranger \
 	texlive \
+	vulkan-intel lib32-vulkan-intel steam \
 
 # install yay
 git clone https://aur.archlinux.org/yay.git
