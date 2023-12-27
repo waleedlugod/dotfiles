@@ -42,7 +42,7 @@ vim.opt.splitbelow = true
 vim.opt.showmode = false
 
 -- terminal
-vim.opt.shell = "fish"
+vim.opt.shell = "bash"
 
 -- use undotree as backup system
 vim.opt.swapfile = false
