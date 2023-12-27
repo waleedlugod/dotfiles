@@ -1,12 +1,5 @@
-/*
 
-!.gitignore
-!/.config/
-!/.config/*
-!.bashrc
-!README.md
-
-.config/google-chrome
-.config/lazygit/state.yml
-.config/menus
-.config/pulse
+google-chrome
+lazygit/state.yml
+menus
+pulse

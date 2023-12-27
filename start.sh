@@ -2,10 +2,9 @@
 # install shit
 sudo pacman -S --noconfirm \
 	xf86-video-intel bluez bluez-utils blueman wireplumber \
-	pipewire pipewire-audio pipewire-alsa pipewire-pulse pipewire-jack \
+	pipewire pipewire-audio pipewire-alsa pipewire-pulse pipewire-jack mpd \
 	hyprland xdg-desktop-portal-hyprland qt5-waylnd qt6-waylnd \
 	polkit dunst wofi wl-clipboard \
-	ttf-jetbrains-mono ttf-nerd-fonts-symbols-mono \
 	lazygit neovim git openssh \
 	ripgrep fd fzf \
 	cmake nodejs npm python python-pip \
@@ -28,6 +27,8 @@ yay -S --noconfirm \
 	google-chrome \
 	github-cli \
 	nonicons-git \
+	waybar-git \
+	all-repository-fonts \
 
 # install live-server
 sudo npm i -g live-server
@@ -45,5 +46,6 @@ systemctl enable NetworkManager
 systemctl enable dhcpcd
 systemctl enable iwd
 systemctl enable bluetooth
+systemctl enable mpd
 
 chmod +x ~/.config/hypr/exec.sh
