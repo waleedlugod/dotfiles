@@ -30,6 +30,9 @@ yay -S --noconfirm \
 	nonicons-git \
 	waybar-git \
 	all-repository-fonts \
+	hyprpicker-git \
+	vencord-desktop-git \
+	xwaylandvideobridge-bin \
 
 # install live-server
 sudo npm i -g live-server
