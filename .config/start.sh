@@ -1,7 +1,7 @@
 #!/bin/bash
 # install shit
 sudo pacman -S --noconfirm \
-	xf86-video-intel bluez wireplumber \
+	xf86-video-intel bluez bluez-utils blueman wireplumber \
 	pipewire pipewire-audio pipewire-alsa pipewire-pulse pipewire-jack \
 	hyprland xdg-desktop-portal-hyprland qt5-waylnd qt6-waylnd \
 	polkit dunst wofi wl-clipboard \
@@ -44,3 +44,6 @@ systemctl enable systemd-timesyncd
 systemctl enable NetworkManager
 systemctl enable dhcpcd
 systemctl enable iwd
+systemctl enable bluetooth
+
+chmod +x ~/.config/hypr/exec.sh
