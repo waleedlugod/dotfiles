@@ -2,11 +2,13 @@
 # install shit
 sudo pacman -S --noconfirm \
 	xf86-video-intel bluez bluez-utils blueman wireplumber \
+	thermal cpupower smartmontools \
 	pipewire pipewire-audio pipewire-alsa pipewire-pulse pipewire-jack mpd \
 	hyprland qt5-wayland qt6-wayland \
 	xdg-desktop-portal-gtk xdg-desktop-portal-hyprland \
 	polkit dunst wofi wl-clipboard \
-	lazygit neovim git openssh wget \
+	lazygit neovim git \
+	openssh wget nftables \
 	ripgrep fd fzf \
 	cmake nodejs npm python python-pip \
 	jdk-openjdk php composer \
@@ -48,9 +50,13 @@ sudo corepack enable
 cd dotfiles && cp -R . ~/.config
 
 # enable shit
-systemctl enable systemd-timesyncd
-systemctl enable NetworkManager
-systemctl enable dhcpcd
-systemctl enable iwd
-systemctl enable bluetooth
-systemctl enable mpd
+systemctl enable systemd-timesyncd	# time sync
+systemctl enable NetworkManager		# internet
+systemctl enable dhcpcd				# idk tbh but something about networking
+systemctl enable iwd				# internet
+systemctl enable bluetooth			# bluetooth
+systemctl enable mpd				# audio stuff
+systemctl enable thermald			# cpu frequency scaling
+systemctl enable cpupower			# cpu frequency scaling
+systemctl enable nftables			# firewall
+systemctl enable fstrim.timer		# TRIM for faster disk writes
