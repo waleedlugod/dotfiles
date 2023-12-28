@@ -39,6 +39,7 @@ yay -S --noconfirm \
 	vencord-desktop-git \
 	xwaylandvideobridge-bin \
 	ranger-git \
+	swww \
 
 # install live-server
 sudo npm i -g live-server
