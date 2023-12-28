@@ -2,10 +2,10 @@
 # install shit
 sudo pacman -S --noconfirm \
 	xf86-video-intel bluez bluez-utils blueman wireplumber \
-	thermal cpupower smartmontools \
+	thermald cpupower smartmontools acpilight \
 	pipewire pipewire-audio pipewire-alsa pipewire-pulse pipewire-jack \
 	mpd pavucontrol \
-	hyprland qt5-wayland qt6-wayland \
+	hyprland qt5-wayland qt6-wayland kitty \
 	xdg-desktop-portal-gtk xdg-desktop-portal-hyprland \
 	polkit dunst wofi wl-clipboard \
 	lazygit neovim git \
