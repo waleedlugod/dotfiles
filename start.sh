@@ -54,5 +54,3 @@ systemctl enable dhcpcd
 systemctl enable iwd
 systemctl enable bluetooth
 systemctl enable mpd
-
-chmod +x ~/.config/hypr/exec.sh
