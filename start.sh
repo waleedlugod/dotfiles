@@ -7,9 +7,9 @@ sudo pacman -S --noconfirm \
 	mpd pavucontrol \
 	hyprland qt5-wayland qt6-wayland kitty \
 	xdg-desktop-portal-gtk xdg-desktop-portal-hyprland \
-	polkit dunst wofi wl-clipboard \
+	polkit dunst wl-clipboard \
 	lazygit neovim git \
-	openssh wget nftables \
+	openssh wget nftables wtype \
 	ripgrep fd fzf \
 	cmake nodejs npm python python-pip \
 	jdk-openjdk php composer \
@@ -40,6 +40,7 @@ yay -S --noconfirm \
 	xwaylandvideobridge-bin \
 	ranger-git \
 	swww \
+	rofi-lbonn-wayland-git \
 
 # install live-server
 sudo npm i -g live-server

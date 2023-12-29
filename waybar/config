@@ -1,0 +1,15 @@
+{
+	"layer": "top",
+	"modules-left": [ "hyprland/workspaces", ],
+	"modules-right": [
+		"cpu",
+		"memory",
+		"temperature",
+		"backlight",
+		"bluetooth",
+		"wireplumber",
+		"network",
+		"battery",
+		"clock",
+	],
+}
