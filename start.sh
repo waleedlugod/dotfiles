@@ -7,6 +7,7 @@ sudo pacman -S --noconfirm \
 	mpd pavucontrol \
 	hyprland qt5-wayland qt6-wayland kitty \
 	xdg-desktop-portal-gtk xdg-desktop-portal-hyprland \
+	xorg-xwayland \
 	polkit dunst wl-clipboard \
 	lazygit neovim git \
 	openssh wget nftables wtype \
@@ -15,7 +16,7 @@ sudo pacman -S --noconfirm \
 	jdk-openjdk php composer \
 	btop neofetch \
 	vulkan-intel lib32-vulkan-intel steam \
-	python-pillow \
+	python-pillow flameshot \
 	texlive \
 
 # install yay

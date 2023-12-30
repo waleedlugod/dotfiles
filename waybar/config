@@ -1,15 +1,22 @@
 {
 	"layer": "top",
-	"modules-left": [ "hyprland/workspaces", ],
+	"modules-left": [ "hyprland/workspaces" ],
 	"modules-right": [
 		"cpu",
 		"memory",
-		"temperature",
 		"backlight",
-		"bluetooth",
 		"wireplumber",
+		"bluetooth",
 		"network",
 		"battery",
-		"clock",
+		"clock"
 	],
+	"bluetooth": {
+		"on-click": "blueman-manager"
+	},
+	"battery": {
+		"format": "{icon} {capacity}%",
+        "format-charging": "{icon}󱐋 {capacity}%",
+        "format-icons": ["", "", "", "", ""]
+	},
 }
