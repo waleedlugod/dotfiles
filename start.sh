@@ -18,6 +18,7 @@ sudo pacman -S --noconfirm \
 	vulkan-intel lib32-vulkan-intel steam \
 	python-pillow flameshot \
 	texlive zathura tesseract-data-eng \
+	firefox \
 
 # install yay
 git clone https://aur.archlinux.org/yay.git
@@ -31,7 +32,6 @@ yay -Y --devel --save
 
 # install browser
 yay -S --noconfirm \
-	google-chrome \
 	github-cli \
 	nonicons-git \
 	waybar-git \
