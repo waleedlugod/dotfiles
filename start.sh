@@ -17,7 +17,7 @@ sudo pacman -S --noconfirm \
 	btop neofetch \
 	vulkan-intel lib32-vulkan-intel steam \
 	python-pillow flameshot \
-	texlive \
+	texlive zathura tesseract-data-eng \
 
 # install yay
 git clone https://aur.archlinux.org/yay.git
@@ -42,6 +42,7 @@ yay -S --noconfirm \
 	ranger-git \
 	swww \
 	rofi-lbonn-wayland-git \
+	zotero \
 
 # install live-server
 sudo npm i -g live-server

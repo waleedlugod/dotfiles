@@ -11,6 +11,9 @@
 		"battery",
 		"clock"
 	],
+	"hyprland/workspaces": {
+		"show-special": true
+	},
 	"bluetooth": {
 		"on-click": "blueman-manager"
 	},
@@ -19,4 +22,7 @@
         "format-charging": "{icon}󱐋 {capacity}%",
         "format-icons": ["", "", "", "", ""]
 	},
+	"clock": {
+		"format": "{:%b %d	%H:%M}"
+	}
 }
