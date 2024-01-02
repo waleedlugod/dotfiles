@@ -4,7 +4,7 @@ sudo pacman -S --noconfirm \
 	xf86-video-intel bluez bluez-utils blueman wireplumber \
 	thermald cpupower smartmontools acpilight \
 	pipewire pipewire-audio pipewire-alsa pipewire-pulse pipewire-jack \
-	mpd pavucontrol \
+	pavucontrol spotify-launcher \
 	hyprland qt5-wayland qt6-wayland kitty \
 	xdg-desktop-portal-gtk xdg-desktop-portal-hyprland \
 	xorg-xwayland \
@@ -43,6 +43,7 @@ yay -S --noconfirm \
 	swww \
 	rofi-lbonn-wayland-git \
 	zotero \
+	obsidian \
 
 # install live-server
 sudo npm i -g live-server
@@ -57,10 +58,8 @@ cd dotfiles && cp -R . ~/.config
 # enable shit
 systemctl enable systemd-timesyncd	# time sync
 systemctl enable NetworkManager		# internet
-systemctl enable dhcpcd				# idk tbh but something about networking
 systemctl enable iwd				# internet
 systemctl enable bluetooth			# bluetooth
-systemctl enable mpd				# audio stuff
 systemctl enable thermald			# cpu frequency scaling
 systemctl enable cpupower			# cpu frequency scaling
 systemctl enable nftables			# firewall
