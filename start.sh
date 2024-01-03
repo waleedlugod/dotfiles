@@ -1,4 +1,5 @@
 #!/bin/bash
+
 # install shit
 sudo pacman -S --noconfirm \
 	xf86-video-intel bluez bluez-utils blueman wireplumber \
@@ -18,7 +19,7 @@ sudo pacman -S --noconfirm \
 	vulkan-intel lib32-vulkan-intel steam \
 	python-pillow flameshot \
 	texlive zathura tesseract-data-eng \
-	firefox \
+	firefox gimp \
 
 # install yay
 git clone https://aur.archlinux.org/yay.git
@@ -44,6 +45,7 @@ yay -S --noconfirm \
 	rofi-lbonn-wayland-git \
 	zotero \
 	obsidian \
+	figma-linux \
 
 # install live-server
 sudo npm i -g live-server
