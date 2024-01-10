@@ -19,7 +19,7 @@ sudo pacman -S --noconfirm \
 	vulkan-intel lib32-vulkan-intel steam \
 	python-pillow flameshot \
 	texlive zathura tesseract-data-eng \
-	firefox gimp \
+	firefox gimp speedtest-cli \
 
 # install yay
 git clone https://aur.archlinux.org/yay.git
