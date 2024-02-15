@@ -1,0 +1,28 @@
+{
+	"layer": "top",
+	"modules-left": [ "hyprland/workspaces" ],
+	"modules-right": [
+		"cpu",
+		"memory",
+		"backlight",
+		"wireplumber",
+		"bluetooth",
+		"network",
+		"battery",
+		"clock"
+	],
+	"hyprland/workspaces": {
+		"show-special": true
+	},
+	"bluetooth": {
+		"on-click": "blueman-manager"
+	},
+	"battery": {
+		"format": "{icon} {capacity}%",
+        "format-charging": "{icon}󱐋 {capacity}%",
+        "format-icons": ["", "", "", "", ""]
+	},
+	"clock": {
+		"format": "{:%a %b %d	%I:%M %p}"
+	}
+}
