@@ -20,7 +20,7 @@ sudo pacman -S --noconfirm \
 	python-pillow grimshot \
 	texlive zathura tesseract-data-eng \
 	firefox gimp speedtest-cli \
-	tree fish \
+	tree fish arandr \
 
 # install yay
 git clone https://aur.archlinux.org/yay.git
