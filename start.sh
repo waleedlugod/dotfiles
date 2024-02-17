@@ -8,7 +8,7 @@ sudo pacman -S --noconfirm \
 	pavucontrol spotify-launcher \
 	hyprland qt5-wayland qt6-wayland kitty \
 	xdg-desktop-portal-gtk xdg-desktop-portal-hyprland \
-	xorg-xwayland waybar obs-studio vlc \
+	xorg-xwayland xwaylandvideobridge waybar obs-studio vlc \
 	polkit dunst wl-clipboard \
 	lazygit neovim git \
 	openssh wget nftables wtype \
@@ -39,7 +39,6 @@ yay -S --noconfirm \
 	all-repository-fonts \
 	hyprpicker-git \
 	vencord-desktop-git \
-	xwaylandvideobridge-bin \
 	ranger-git \
 	swww \
 	rofi-lbonn-wayland-git \
