@@ -6,9 +6,9 @@ sudo pacman -S --noconfirm \
 	thermald cpupower smartmontools acpilight \
 	pipewire pipewire-audio pipewire-alsa pipewire-pulse pipewire-jack \
 	pavucontrol spotify-launcher \
-	hyprland qt5-wayland qt6-wayland kitty \
-	xdg-desktop-portal-gtk xdg-desktop-portal-hyprland \
-	xorg-xwayland xwaylandvideobridge waybar obs-studio vlc \
+	qt5-wayland qt6-wayland kitty hyprlang \
+	xdg-desktop-portal xorg-xwayland xwaylandvideobridge \
+	waybar obs-studio vlc \
 	polkit dunst wl-clipboard \
 	lazygit neovim git \
 	openssh wget nftables wtype \
@@ -46,6 +46,9 @@ yay -S --noconfirm \
 	obsidian \
 	figma-linux \
 	zoom \
+	hyprland-git \
+	xdg-desktop-portal-gtk-git \
+	xdg-desktop-portal-hyprland-git \
 
 # install live-server
 sudo npm i -g live-server
