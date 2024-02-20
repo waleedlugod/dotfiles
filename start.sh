@@ -48,7 +48,7 @@ yay -S --noconfirm \
 	zoom \
 	hyprland-git \
 	xdg-desktop-portal-gtk-git \
-	xdg-desktop-portal-hyprland-git \
+	xdg-desktop-portal-wlr-git \
 
 # install live-server
 sudo npm i -g live-server
