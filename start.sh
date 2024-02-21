@@ -7,7 +7,7 @@ sudo pacman -S --noconfirm \
 	pipewire pipewire-audio pipewire-alsa pipewire-pulse pipewire-jack \
 	pavucontrol spotify-launcher \
 	qt5-wayland qt6-wayland kitty hyprlang \
-	xdg-desktop-portal xorg-xwayland xwaylandvideobridge \
+	xdg-desktop-portal xdg-desktop-portal-hyprland xorg-xwayland xwaylandvideobridge \
 	waybar obs-studio vlc \
 	polkit dunst wl-clipboard \
 	lazygit neovim git \
@@ -48,7 +48,6 @@ yay -S --noconfirm \
 	zoom \
 	hyprland-git \
 	xdg-desktop-portal-gtk-git \
-	xdg-desktop-portal-wlr-git \
 
 # install live-server
 sudo npm i -g live-server
