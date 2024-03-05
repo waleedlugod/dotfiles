@@ -12,7 +12,7 @@ sudo pacman -S --noconfirm \
 	polkit dunst wl-clipboard \
 	lazygit neovim git \
 	openssh wget nftables wtype \
-	ripgrep fd fzf \
+	ripgrep fd fzf exa \
 	cmake nodejs npm python python-pip \
 	jdk-openjdk php composer \
 	btop neofetch \
@@ -20,7 +20,7 @@ sudo pacman -S --noconfirm \
 	python-pillow grimshot \
 	texlive zathura tesseract-data-eng \
 	firefox gimp speedtest-cli \
-	tree fish arandr \
+	fish arandr \
 
 # install yay
 git clone https://aur.archlinux.org/yay.git
