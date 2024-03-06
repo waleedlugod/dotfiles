@@ -1,4 +1,4 @@
--- Yank into system clipboard
+-- yank into system clipboard
 vim.keymap.set({"n", "v"}, "<leader>y", "\"+y")
 vim.keymap.set({"n", "v"}, "<leader>Y", "\"+Y")
 
@@ -10,3 +10,6 @@ vim.keymap.set("v", "<A-k>", ":m '<-2<CR>gv=gv")
 
 -- reselect pasted text
 vim.keymap.set("n", "gp", "`[v`]")
+
+-- format entire document
+vim.keymap.set("n", "gq%", "gggqG<C-o>")
