@@ -17,7 +17,7 @@ vim.opt.smartindent = true
 
 -- indentations for web stuff
 vim.api.nvim_create_autocmd("FileType", {
-	pattern ={ "html", "javascript", "javascriptreact", "css" },
+	pattern ={ "html", "javascript", "javascriptreact", "css", "php" },
 	callback = function()
 		vim.opt.tabstop = 2
 		vim.opt.softtabstop = 2
@@ -26,7 +26,8 @@ vim.api.nvim_create_autocmd("FileType", {
 })
 
 -- line wrap
-vim.opt.wrap = false
+vim.opt.textwidth = 80
+vim.opt.linebreak = true
 
 -- search settings
 vim.opt.ignorecase = true

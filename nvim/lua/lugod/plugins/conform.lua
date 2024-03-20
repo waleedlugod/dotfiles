@@ -7,10 +7,10 @@ return {
 				lua = { "stylua" },
 				python = { "isort", "black" },
 				javascriptreact = { "prettierd" },
-				html = { "djlint" },
+				html = { { "prettierd", "djlint" } },
 				css = { "stylelint" },
 				java = { "google-java-format" },
-				php = { "php_cs_fixer", "phpcbf" },
+				php = { "php_cs_fixer", "phpcbf", "prettierd" },
 			},
 		})
 
