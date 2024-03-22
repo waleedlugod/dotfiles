@@ -2,7 +2,7 @@
 
 # install shit
 sudo pacman -S --noconfirm \
-	xf86-video-intel bluez bluez-utils blueman wireplumber \
+	xorg-server bluez bluez-utils blueman wireplumber \
 	thermald cpupower smartmontools acpilight \
 	pipewire pipewire-audio pipewire-alsa pipewire-pulse pipewire-jack \
 	pavucontrol spotify-launcher \
