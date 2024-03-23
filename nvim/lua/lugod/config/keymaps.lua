@@ -13,3 +13,6 @@ vim.keymap.set("n", "gp", "`[v`]")
 
 -- format entire document
 vim.keymap.set("n", "gq%", "gggqG<C-o>")
+
+-- delete word in insert mode
+vim.keymap.set("i", "<C-BS>", "<C-W>")
