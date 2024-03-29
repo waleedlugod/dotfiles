@@ -8,7 +8,7 @@ sudo pacman -S --noconfirm \
 	pavucontrol spotify-launcher \
 	qt5-wayland qt6-wayland kitty hyprland \
 	xdg-desktop-portal xdg-desktop-portal-hyprland xorg-xwayland xwaylandvideobridge \
-	waybar obs-studio vlc \
+	waybar obs-studio vlc ffmpeg \
 	polkit dunst wl-clipboard \
 	lazygit neovim git \
 	openssh wget nftables wtype \
@@ -20,7 +20,7 @@ sudo pacman -S --noconfirm \
 	python-pillow grimshot \
 	texlive zathura tesseract-data-eng \
 	firefox gimp speedtest-cli \
-	fish arandr \
+	fish arandr bat \
 
 # install yay
 git clone https://aur.archlinux.org/yay.git
