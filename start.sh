@@ -6,7 +6,7 @@ sudo pacman -S --noconfirm \
 	thermald cpupower smartmontools acpilight \
 	pipewire pipewire-audio pipewire-alsa pipewire-pulse pipewire-jack \
 	pavucontrol spotify-launcher \
-	qt5-wayland qt6-wayland kitty hyprland \
+	qt5-wayland qt6-wayland kitty hyprland greetd \
 	xdg-desktop-portal xdg-desktop-portal-hyprland xorg-xwayland xwaylandvideobridge \
 	waybar obs-studio vlc ffmpeg \
 	polkit dunst wl-clipboard \
@@ -66,3 +66,4 @@ systemctl enable thermald			# cpu frequency scaling
 systemctl enable cpupower			# cpu frequency scaling
 systemctl enable nftables			# firewall
 systemctl enable fstrim.timer		# TRIM for faster disk writes
+systemctl enable greetd.service		# greeter
