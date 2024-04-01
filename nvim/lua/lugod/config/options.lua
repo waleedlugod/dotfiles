@@ -27,7 +27,6 @@ vim.api.nvim_create_autocmd("FileType", {
 
 -- line wrap
 vim.opt.textwidth = 80
-vim.opt.linebreak = true
 
 -- search settings
 vim.opt.ignorecase = true
