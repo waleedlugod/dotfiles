@@ -16,3 +16,18 @@ vim.keymap.set("n", "gq%", "gggqG<C-o>")
 
 -- delete word in insert mode
 vim.keymap.set("i", "<C-BS>", "<C-W>")
+
+-- change window focus
+vim.keymap.set("n", "<C-h>", "<C-w>h")
+vim.keymap.set("n", "<C-j>", "<C-w>j")
+vim.keymap.set("n", "<C-k>", "<C-w>k")
+vim.keymap.set("n", "<C-l>", "<C-w>l")
+
+-- resize window
+vim.keymap.set("n", "<C-A-h>", "<C-w><")
+vim.keymap.set("n", "<C-A-j>", "<C-w>+")
+vim.keymap.set("n", "<C-A-k>", "<C-w>-")
+vim.keymap.set("n", "<C-A-l>", "<C-w>>")
+vim.keymap.set("n", "<C-A-->", "<C-w>_")
+vim.keymap.set("n", "<C-A-Bslash>", "<C-w>|")
+vim.keymap.set("n", "<C-A-=>", "<C-w>=")
