@@ -7,6 +7,7 @@ return {
 				lua = { "stylua" },
 				python = { "isort", "black" },
 				javascriptreact = { "prettierd" },
+				javascript = { "prettierd" },
 				html = { { "prettierd", "djlint" } },
 				css = { "stylelint" },
 				java = { "google-java-format" },
