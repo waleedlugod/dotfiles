@@ -8,7 +8,7 @@ sudo pacman -S --noconfirm \
 	pavucontrol spotify-launcher \
 	qt5-wayland qt6-wayland kitty hyprland greetd greetd-tuigreet \
 	xdg-desktop-portal xdg-desktop-portal-hyprland xorg-xwayland xwaylandvideobridge \
-	waybar obs-studio vlc ffmpeg \
+	waybar obs-studio vlc audacity ffmpeg \
 	polkit dunst wl-clipboard \
 	lazygit neovim git \
 	openssh wget nftables wtype \
