@@ -18,7 +18,7 @@ sudo pacman -S --noconfirm \
 	btop neofetch \
 	vulkan-intel lib32-vulkan-intel steam \
 	python-pillow grimshot \
-	texlive zathura tesseract-data-eng \
+	zathura tesseract-data-eng \
 	firefox gimp speedtest-cli \
 	fish arandr bat \
 
