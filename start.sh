@@ -19,7 +19,7 @@ sudo pacman -S --noconfirm \
 	vulkan-intel lib32-vulkan-intel steam \
 	python-pillow grimshot \
 	zathura tesseract-data-eng \
-	firefox gimp speedtest-cli \
+	firefox krita speedtest-cli \
 	fish arandr bat \
 
 # install yay
