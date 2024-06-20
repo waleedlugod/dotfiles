@@ -31,3 +31,6 @@ vim.keymap.set("n", "<C-A-l>", "<C-w>>")
 vim.keymap.set("n", "<C-A-->", "<C-w>_")
 vim.keymap.set("n", "<C-A-Bslash>", "<C-w>|")
 vim.keymap.set("n", "<C-A-=>", "<C-w>=")
+
+-- paste without replace
+vim.keymap.set("x", "<leader>p", "\"_dP")
