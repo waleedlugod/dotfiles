@@ -15,7 +15,7 @@ sudo pacman -S --noconfirm \
 	ripgrep fd fzf exa \
 	cmake nodejs npm python python-pip \
 	jdk-openjdk php composer \
-	btop neofetch \
+	glances neofetch \
 	vulkan-intel lib32-vulkan-intel steam \
 	python-pillow grimshot \
 	zathura tesseract-data-eng \
