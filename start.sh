@@ -20,7 +20,7 @@ sudo pacman -S --noconfirm \
 	python-pillow grimshot \
 	zathura tesseract-data-eng \
 	firefox krita speedtest-cli \
-	fish arandr bat \
+	fish arandr bat dolphin \
 
 # install yay
 git clone https://aur.archlinux.org/yay.git
