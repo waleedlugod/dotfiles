@@ -21,6 +21,7 @@ sudo pacman -S --noconfirm \
 	zathura tesseract-data-eng \
 	firefox krita pinta speedtest-cli \
 	fish arandr bat dolphin p7zip unp unrar \
+	godot \
 
 # install yay
 git clone https://aur.archlinux.org/yay.git
