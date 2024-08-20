@@ -28,6 +28,7 @@ return {
 					"psalm",
 					"pyright",
 					"tailwindcss-language-server",
+					"gdtoolkit",
 					-- install DAPs
 					"debugpy",
 					"php-debug-adapter",

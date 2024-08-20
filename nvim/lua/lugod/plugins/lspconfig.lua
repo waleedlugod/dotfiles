@@ -8,7 +8,6 @@ return {
 		{ "folke/neodev.nvim", opts = {} },
 	},
 	config = function()
-
 		-- enable auotcompletion
 		local capabilities = require("cmp_nvim_lsp").default_capabilities()
 
@@ -77,6 +76,12 @@ return {
 			capabilities = capabilities,
 			filetypes = { "python" },
 		})
+
+		-- configure GDScript server
+		lspconfig["gdscript"].setup({ capabilities = capabilities })
+		vim.keymap.set("n", "<leader>sg", function()
+			vim.fn.serverstart("127.0.0.1:6004")
+		end, { noremap = true })
 
 		-- change diagnostic symbols in the sign column
 		local signs = { Error = " ", Warn = " ", Hint = "󰠠 ", Info = " " }
