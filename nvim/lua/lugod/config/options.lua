@@ -25,9 +25,6 @@ vim.api.nvim_create_autocmd("FileType", {
 	end,
 })
 
--- line wrap
-vim.opt.textwidth = 80
-
 -- search settings
 vim.opt.ignorecase = true
 vim.opt.smartcase = true
@@ -49,3 +46,6 @@ vim.opt.swapfile = false
 vim.opt.backup = false
 vim.opt.undodir = vim.fn.stdpath("data") .. "/undodir"
 vim.opt.undofile = true
+
+-- set color column
+vim.opt.colorcolumn = "80"
