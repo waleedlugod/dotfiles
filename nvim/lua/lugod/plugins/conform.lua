@@ -12,6 +12,7 @@ return {
 				css = { "stylelint" },
 				java = { "google-java-format" },
 				php = { "php_cs_fixer", "phpcbf", "prettierd" },
+				gdscript = { "gdformat" },
 			},
 		})
 
