@@ -7,7 +7,6 @@ return {
 		require("catppuccin").setup({
 			show_end_of_buffer = true,
 			term_colors = true,
-			transparent_background = true,
 			integrations = {
 				cmp = true,
 				nvimtree = true,
@@ -22,6 +21,6 @@ return {
 				markdown = true,
 			},
 		})
-		vim.cmd.colorscheme "catppuccin"
+		vim.cmd.colorscheme "catppuccin-latte"
 	end,
 }
